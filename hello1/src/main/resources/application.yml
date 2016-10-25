@@ -1,0 +1,19 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: hello1
+  sleuth:
+      sampler:
+        percentage: 1.0
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
+  instance:
+    preferIpAddress: true
+    lease-expiration-duration-in-seconds: 1
+    lease-renewal-interval-in-seconds: 10
+    instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${spring.application.instance_id:${server.port}}
