@@ -15,6 +15,7 @@
         <module>hello1</module>
         <module>hello2</module>
         <module>cloud-admin</module>
+        <module>cloud-dashboard</module>
         <module>zipkin-server</module>
     </modules>
 
