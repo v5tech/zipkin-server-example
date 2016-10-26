@@ -22,11 +22,11 @@ public class Hello1Application {
     @Autowired
     private Hello2Client hello2Client;
 
-	public static void main(String[] args) {
-		SpringApplication.run(Hello1Application.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(Hello1Application.class, args);
+    }
 
-	@RequestMapping(path = "/", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    @RequestMapping(path = "/", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public String hello1() {
         return "-> Hello World 1 " + hello2Client.hello2();
     }

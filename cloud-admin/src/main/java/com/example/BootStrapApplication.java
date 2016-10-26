@@ -1,16 +1,17 @@
-package com.example.zipkin;
+package com.example;
 
+import de.codecentric.boot.admin.config.EnableAdminServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import zipkin.server.EnableZipkinServer;
 
-@EnableZipkinServer
+@EnableAdminServer
 @EnableDiscoveryClient
 @SpringBootApplication
-public class ZipkinServerApplication {
+public class BootStrapApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ZipkinServerApplication.class, args);
+        SpringApplication.run(BootStrapApplication.class, args);
     }
+
 }

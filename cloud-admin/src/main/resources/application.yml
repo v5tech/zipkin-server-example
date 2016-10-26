@@ -1,9 +1,9 @@
 server:
-  port: 9411
+  port: 8080
 
 spring:
   application:
-    name: zipkin-server
+    name: cloud-admin
 
 eureka:
   client:

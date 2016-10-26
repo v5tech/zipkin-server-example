@@ -9,11 +9,12 @@
     <packaging>pom</packaging>
 
     <name>zipkin-server-example</name>
-    
+
     <modules>
         <module>eureka-server</module>
         <module>hello1</module>
         <module>hello2</module>
+        <module>cloud-admin</module>
         <module>zipkin-server</module>
     </modules>
 

@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>eureka-server</artifactId>
+    <artifactId>cloud-admin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>eureka-server</name>
+    <name>cloud-admin</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
@@ -27,12 +27,24 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-server</artifactId>
+            <version>1.4.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-server-ui</artifactId>
+            <version>1.4.3</version>
         </dependency>
 
         <dependency>
